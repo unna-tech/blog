@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 3.8.5"
-gem "github-pages", "~> 192"
+gem "github-pages", group: :jekyll_plugins
 gem "rake", "~> 12.3.1"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
