@@ -37,3 +37,21 @@ into the {body} of the default.hbs template -->
 
     </div>
 </main>
+
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org/",
+        "@type": "Website",
+        "url": "https://blog.unna.tech",
+        "name": "Blog | Unna Tech",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Unna Tech",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
+            }
+        },
+        "description": "{{ site.description }}"
+    }
+</script>
