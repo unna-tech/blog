@@ -70,7 +70,7 @@ feed:
 safe: False
 lsi: False
 username: unna-tech
-repo: jasper2
+repo: blog
 branch: master
 relative_source: ../blog/
 destination: ../blog-pages/
