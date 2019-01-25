@@ -16,8 +16,6 @@ author: estevan
 category: dev
 tags:
   - javascript
-  - css
-  - nodejs
 ---
 I had this story from one who had no business to tell it to me, or to any other. I may credit the seductive influence of an old vintage upon the narrator for the beginning of it, and my own skeptical incredulity during the days that followed for the balance of the strange tale.
 
