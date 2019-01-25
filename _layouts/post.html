@@ -44,7 +44,7 @@ into the {body} of the default.hbs template -->
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.placeholder }}); filter: blur(10px);" data-echo-background="{{ site.baseurl }}{{ page.cover }}">
+            <figure class="post-full-image" style="background-image: url({{ page.placeholder }}); filter: blur(10px);" data-echo-background="{{ page.cover }}">
             </figure>
             {% endif %}
 
