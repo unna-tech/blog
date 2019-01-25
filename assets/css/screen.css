@@ -456,9 +456,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .author-profile-image {
-    margin-right: 5px;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
 
     object-fit: cover;
@@ -480,7 +479,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     letter-spacing: .5px;
     text-transform: uppercase;
     float: right;
-    margin-top: -4px;
     color: var(--midgrey);
 }
 

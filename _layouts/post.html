@@ -19,6 +19,8 @@ into the {body} of the default.hbs template -->
 <!-- Everything inside the #post tags pulls data from the post -->
 <!-- #post -->
 
+{% include lazyload.html %}
+
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
@@ -42,7 +44,7 @@ into the {body} of the default.hbs template -->
             </header>
 
             {% if page.cover %}
-            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.cover }})">
+            <figure class="post-full-image" style="background-image: url({{ site.baseurl }}{{ page.placeholder }}); filter: blur(10px);" data-echo-background="{{ site.baseurl }}{{ page.cover }}">
             </figure>
             {% endif %}
 
@@ -90,18 +92,6 @@ into the {body} of the default.hbs template -->
             {% if site.disqus or page.disqus %}
                 <section class="post-full-comments">
                     <div id="disqus_thread"></div>
-                    <script>
-                        var disqus_config = function () {
-                            this.page.url = '{{ site.url }}{{ site.baseurl }}';
-                            this.page.identifier = '{{ site.title }}';
-                        };
-                        (function() {
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
                 </section>
             {% endif %}
 
@@ -222,4 +212,17 @@ into the {body} of the default.hbs template -->
         },
         "url": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}"
     }
+</script>
+
+<script>
+    var disqus_config = function () {
+        this.page.url = '{{ site.url }}{{ site.baseurl }}';
+        this.page.identifier = '{{ site.title }}';
+    };
+    (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
