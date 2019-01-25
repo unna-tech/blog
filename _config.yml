@@ -14,7 +14,7 @@ cover: assets/images/blog-cover.jpg
 logo: assets/images/blog-icon.png
 logo_dark: assets/images/favicon.png
 favicon: assets/images/favicon.png
-production_url: https://blog.unna.tech
+url: https://blog.unna.tech
 source_url: https://github.com/unna-tech/blog/
 CNAME: #add cname for website to be created
 
@@ -73,7 +73,7 @@ repo: jasper2
 branch: master
 relative_source: ../blog/
 destination: ../blog-pages/
-production_url:  https://blog.unna.tech
+url:  https://blog.unna.tech
 source_url:  https://github.com/unna-tech/blog/
 
 exclude:
