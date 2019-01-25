@@ -8,7 +8,7 @@
 
     <!-- Base Meta -->
     {% include dynamic_title.html %}
-    <title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% endif %} | {{ site.title }}</title>
+    <title>{% if title %}{{ title }} |{% elsif page.title %}{{ page.title }} |{% endif %} {{ site.title }}</title>
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
@@ -81,8 +81,8 @@
                 {% if site.logo %}
                     <img class="subscribe-overlay-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}" />
                 {% endif %}
-                <h1 class="subscribe-overlay-title">Subscribe to {{ site.title }}</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
+                <h1 class="subscribe-overlay-title">Assine nossa Newsletter</h1>
+                <p class="subscribe-overlay-description">Fique por dentro! Receba os últimos &amp; melhores posts direto no seu email</p>
                 {% include subscribe-form.html placeholder="youremail@example.com" %}
             </div>
         </div>
