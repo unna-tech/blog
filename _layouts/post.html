@@ -55,8 +55,8 @@ into the {body} of the default.hbs template -->
             <!-- Email subscribe form at the bottom of the page -->
             {% if site.subscribers %}
                 <section class="subscribe-form">
-                    <h3 class="subscribe-form-title">Subscribe to {{ site.title }}</h3>
-                    <p>Get the latest posts delivered right to your inbox</p>
+                    <h3 class="subscribe-form-title">Inscreva-se no {{ site.title }}</h3>
+                    <p>Receba os últimos posts direto no seu email</p>
                     {% include subscribe-form.html placeholder="youremail@example.com" %}
                 </section>
             {% endif %}
@@ -75,12 +75,12 @@ into the {body} of the default.hbs template -->
                                 {% if author[1].bio %}
                                     <p>{{ author[1].bio }}</p>
                                 {% else %}
-                                    <p>Read <a href="{{ site.baseurl }}author/{{ page.author }}">more posts</a> by this author.</p>
+                                    <p>Leia <a href="{{ site.baseurl }}author/{{ page.author }}">mais posts</a> deste autor.</p>
                                 {% endif %}
                             </section>
                         </section>
                         <div class="post-full-footer-right">
-                            <a class="author-card-button" href="{{ site.baseurl }}author/{{ page.author }}">Read More</a>
+                            <a class="author-card-button" href="{{ site.baseurl }}author/{{ page.author }}">Leia mais</a>
                         </div>
                     {% endif %}
                 {% endfor %}
@@ -161,11 +161,11 @@ into the {body} of the default.hbs template -->
                         <footer class="read-next-card-footer">
                             <a href="{{ site.baseurl }}tag/{{ primary | downcase | replace: ' ', '-' }}/">
                                 {% if related_posts > 1 %}
-                                    See all {{ related_posts | minus: 1 }} posts  →
+                                    Veja todos {{ related_posts | minus: 1 }} posts  →
                                 {% elsif related_posts == 1 %}
                                     {{ related_posts }} post  →
                                 {% else %}
-                                    No posts.
+                                    Sem posts.
                                 {% endif %}
                             </a>
                         </footer>
