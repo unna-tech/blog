@@ -20,9 +20,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-      - {label: "Author", name: "author", widget: "select", default: ["estevan"],
+      - {label: "Author", name: "author", widget: "select", default: ["estevanmaito"],
           options: [
-            {label: "Estevan Maito", value: "estevan"}
+            {label: "Estevan Maito", value: "estevanmaito"}
           ]
         }
       - {label: "Category", name: "category", widget: "select", options: ["javascript", "css", "html", "dev", "geral"]}
