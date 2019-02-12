@@ -29,7 +29,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #f4f8fb;
+    background: #fff;
 }
 
 .img {
@@ -109,9 +109,9 @@ body {
     position: relative;
     padding-top: 12px;
     padding-bottom: 12px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
-    background-size: cover;
+    color: #15171a;
+    background: #fff repeat;
+    background-size: 30%;
 }
 
 .site-header:before {
@@ -123,7 +123,7 @@ body {
     left: 0;
     z-index: 10;
     display: block;
-    background: rgba(0,0,0,0.18);
+    /* background: rgba(0,0,0,0.18); */
 }
 
 .site-header:after {
@@ -136,7 +136,7 @@ body {
     z-index: 10;
     display: block;
     height: 80px;
-    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0));
+    /* background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0)); */
 }
 
 .site-header.no-cover:before,
@@ -263,7 +263,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: block;
     margin: 0;
     padding: 10px 12px;
-    color: #fff;
+    color: #15171a;
     opacity: 0.8;
 }
 
@@ -295,7 +295,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     align-items: center;
     margin: 0;
     padding: 10px;
-    color: #fff;
+    color: #15171a;
     opacity: 0.8;
 }
 
@@ -305,7 +305,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .social-link svg {
     height: 1.8rem;
-    fill: #fff;
+    fill: #15171a;
 }
 
 .social-link-fb svg {
@@ -317,7 +317,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 
 .social-link-wb svg path {
-    stroke: #fff;
+    stroke: #15171a;
 }
 
 .social-link-rss svg {
@@ -327,8 +327,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .subscribe-button {
     display: block;
     padding: 4px 10px;
-    border: #fff 1px solid;
-    color: #fff;
+    border: #15171a 1px solid;
+    color: #15171a;
     font-size: 1.2rem;
     line-height: 1em;
     border-radius: 10px;
@@ -582,8 +582,12 @@ The first (most recent) post in the list is styled to be bigger than the others 
     text-transform: uppercase;
 }
 
+.post-full-meta a {
+    color: var(--darkgrey);
+}
+
 .post-full-meta-date {
-    color: var(--blue);
+    color: var(--midgrey);
 }
 
 .post-full-title {
@@ -1869,8 +1873,9 @@ Usage (In Ghost editor):
     position: relative;
     padding-top: 20px;
     padding-bottom: 60px;
-    color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    color: #15171a;
+    background: #fff repeat;
+    background-size: 30%;
 }
 
 .site-footer-content {
@@ -1878,16 +1883,16 @@ Usage (In Ghost editor):
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    color: rgba(255,255,255,0.7);
+    color: rgba(0,0,0,0.7);
     font-size: 1.3rem;
 }
 
 .site-footer-content a {
-    color: rgba(255,255,255,0.7);
+    color: rgba(0,0,0,0.7);
 }
 
 .site-footer-content a:hover {
-    color: rgba(255,255,255,1);
+    color: rgba(0,0,0,1);
     text-decoration: none;
 }
 

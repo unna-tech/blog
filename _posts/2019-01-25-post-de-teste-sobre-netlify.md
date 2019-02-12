@@ -23,6 +23,14 @@ When my convivial host discovered that he had told me so much, and that I was pr
 
 I do not say the story is true, for I did not witness the happenings which it portrays, but the fact that in the telling of it to you I have taken fictitious names for the principal characters quite sufficiently evidences the sincerity of my own belief that it MAY be true.
 
+Este é um exemplo de código CSS
+
+```css
+body {
+    width: 100px;
+}
+```
+
 The yellow, mildewed pages of the diary of a man long dead, and the records of the Colonial Office dovetail perfectly with the narrative of my convivial host, and so I give you the story as I painstakingly pieced it out from these several various agencies.
 
 If you do not find it credible you will at least be as one with me in acknowledging that it is unique, remarkable, and interesting.
