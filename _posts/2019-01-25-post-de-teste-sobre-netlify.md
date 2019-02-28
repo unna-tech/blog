@@ -31,7 +31,7 @@ body {
 }
 ```
 
-The yellow, mildewed pages of the diary of a man long dead, and the records of the Colonial Office dovetail perfectly with the narrative of my convivial host, and so I give you the story as I painstakingly pieced it out from these several various agencies.
+The yellow, mildewed `pages` of the diary of a man long dead, and the records of the Colonial Office dovetail perfectly with the narrative of my convivial host, and so I give you the story as I painstakingly pieced it out from these several various agencies.
 
 If you do not find it credible you will at least be as one with me in acknowledging that it is unique, remarkable, and interesting.
 
