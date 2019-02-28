@@ -22,8 +22,8 @@
                     <h2 class="post-card-title">{{ page.previous.title }}</h2>
                 </header>
                 <section class="post-card-excerpt">
-                    {% if post.excerpt %}
-                        <p>{{ post.excerpt | strip_html | truncatewords: 33, "" }}</p>
+                    {% if post.description %}
+                        <p>{{ post.description | strip_html | truncatewords: 33, "" }}</p>
                     {% else %}
                         <p>{{ post.content | strip_html | truncatewords: 33, "" }}</p>
                     {% endif %}
@@ -33,11 +33,10 @@
                 {% for author in site.data.authors %}
                     {% if author[1].username == page.previous.author %}
                         {% if author[1].picture %}
-                        <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                        <a href="{{ site.baseurl }}author/{{ post.author }}/" title="{{ author[1].name }}">
+                            <img class="author-profile-image" src="{{ site.baseurl }}{{ author[1].picture }}" alt="{{ author[1].name }}" />
+                        </a>
                         {% endif %}
-                        <span class="post-card-author">
-                            <a href="{{ site.baseurl }}author/{{ page.previous.author }}/">{{ author[1].name }}</a>
-                        </span>
                     {% endif %}
                 {% endfor %}
                 <span class="reading-time">
