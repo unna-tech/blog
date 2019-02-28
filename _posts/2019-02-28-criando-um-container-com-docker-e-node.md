@@ -102,26 +102,48 @@ Show de bola, agooora que a gente vai começar a instalar o Docker CE (Community
 1. Atualize a lista de pacotes (sim, de novo):
 
 ```shell
+$ sudo apt-get update
 ```
 
 2. Instale a última versão do Docker CE
 
 ```shell
+$ sudo apt-get install docker-ce docker-ce-cli
 ```
 
-3. 
-
-
-
-
-
-
-
+3. Verifique que o comando abaixo retorna uma versão:
 
 ```shell
+$ docker -v
+Docker version 18.09.2, build 6247962
 ```
+
+Pra não ficar tendo que rodar depois todos os comandos com `sudo`, eu aconselho criar um grupo no sistema pro Docker:
+
 ```shell
+$ sudo groupadd docker
 ```
+
+E adicionar o seu usuário a ele com poderes de `sudo`
+
+```shell
+$ sudo usermod -aG docker $USER
+```
+
+Deslogue e logue de volta que vai funcionar (às vezes pode precisar reiniciar, mas aí você vai descobrir quando rodarmos algum comando).
+
+## Primeiro servidor com Node e Docker
+
+Antes de continuar com `docker-compose`, instalar MongoDB, GraphQL e tudo mais, eu preciso cumprir minha promessa de te fazer ver o Docker como uma ferramenta que pode fazer a diferença no seu dia-a-dia.
+
+
+
+
+
+
+
+
+
 
 
 
