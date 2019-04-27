@@ -10,7 +10,7 @@ title: 'Backend com Node, GraphQL, Mongo e Docker'
 description: >-
   Primeiro de uma série de posts sobre uma solução de backend completa usando um
   stack muito sólido.
-date: '2019-02-28 10:39:40'
+date: '2030-02-28 10:39:40'
 author: estevanmaito
 category: dev
 tags:

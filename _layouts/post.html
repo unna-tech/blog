@@ -21,6 +21,50 @@ into the {body} of the default.hbs template -->
 
 {% include lazyload.html %}
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener('click', function(e) {
+      if (e.target.classList.contains("expand-report")) {
+        e.target.classList.toggle("open");
+      }
+    })
+
+  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+  let active = false;
+
+  const lazyLoad = function() {
+    if (active === false) {
+      active = true;
+
+      setTimeout(function() {
+        lazyImages.forEach(function(lazyImage) {
+          if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
+            lazyImage.src = lazyImage.dataset.src;
+            lazyImage.classList.remove("lazy");
+
+            lazyImages = lazyImages.filter(function(image) {
+              return image !== lazyImage;
+            });
+
+            if (lazyImages.length === 0) {
+              document.removeEventListener("scroll", lazyLoad);
+              window.removeEventListener("resize", lazyLoad);
+              window.removeEventListener("orientationchange", lazyLoad);
+            }
+          }
+        });
+
+        active = false;
+      }, 200);
+    }
+  };
+
+  document.addEventListener("scroll", lazyLoad);
+  window.addEventListener("resize", lazyLoad);
+  window.addEventListener("orientationchange", lazyLoad);
+});
+</script>
+
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
@@ -213,16 +257,25 @@ into the {body} of the default.hbs template -->
         "url": "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}{% endif %}{{ page.url | remove_first: '/' }}"
     }
 </script>
-
-<script>
-    var disqus_config = function () {
-        this.page.url = '{{ site.url }}{{ site.baseurl }}';
-        this.page.identifier = '{{ site.title }}';
-    };
-    (function() {
+<script type="text/javascript">
+    var disqus_loaded = false;
+    function load_disqus()
+    {
+        var disqus_config = function () {
+            this.page.url = '{{ site.url }}{{ site.baseurl }}';
+            this.page.identifier = '{{ site.title }}';
+        };
         var d = document, s = d.createElement('script');
         s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
-    })();
+        disqus_loaded = true;
+    };
+    window.onscroll = function(e) {
+        if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 500)) {
+            if (disqus_loaded==false) {
+                load_disqus();
+            }
+        }
+    };
 </script>

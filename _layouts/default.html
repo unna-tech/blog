@@ -58,7 +58,7 @@
         {% endif %}
 
         <!-- The footer at the very bottom of the screen -->
-        <footer class="site-footer outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+        <footer class="site-footer outer {% if site.cover %}" style="background-image:  url({{ site.baseurl }}{% if site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a> &copy; {{  site.time | date: '%Y' }}</section>
                 <section class="poweredby">Feito com <a href="https://jekyllrb.com/">Jekyll</a></section>
@@ -88,14 +88,6 @@
         </div>
     {% endif %}
 
-    <!-- highlight.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.10.0/components/prism-abap.min.js"></script>
-    <script>$(document).ready(function() {
-      $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-      });
-    });</script>
-
     <!-- jQuery + Fitvids, which makes all video embeds responsive -->
     <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -103,7 +95,7 @@
         crossorigin="anonymous">
     </script>
     <script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
+    <!-- <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script> -->
 
 
     <!-- Paginator increased to "infinit" in _config.yml -->

@@ -15,6 +15,17 @@ var cssnano = require('cssnano');
 var customProperties = require('postcss-custom-properties');
 var easyimport = require('postcss-easy-import');
 
+const imagemin = require('gulp-imagemin');
+const rename = require('gulp-rename');
+// const imagesConvert = require('gulp-images-convert')
+
+gulp.task('convert', function () {
+    return gulp.src('assets/images/brasileiro/*/imgs/*.png')
+        .pipe(imagesConvert({targetType: 'jpg'}))
+        .pipe(rename({extname: ".jpg"}))
+        .pipe(gulp.dest('assets/dist/rename'));
+  })
+
 var swallowError = function swallowError(error) {
     gutil.log(error.toString());
     gutil.beep();
@@ -65,6 +76,15 @@ gulp.task('zip', ['css'], function() {
         .pipe(gulp.dest(targetDir));
 });
 
+// gulp.task('images', function() {
+//     return gulp.src('assets/images/*')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest('assets/dist/images'))
+// });
+
 gulp.task('default', ['build'], function () {
+    // gulp.src('assets/images/**')
+    //     .pipe(imagemin())
+    //     .pipe(gulp.dest('assets/dist/images'))
     gulp.start('watch');
 });
