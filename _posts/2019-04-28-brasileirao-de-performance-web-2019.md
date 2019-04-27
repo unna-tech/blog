@@ -17,7 +17,7 @@ Todo começo de campeonato brasileiro de futebol surgem diversas comparações e
 
 Meu objetivo, além de criar uma competição descontraída e inovadora, é mostrar erros e acertos nos sites dos times que amamos e que podem nos ajudar em nossas escolhas diárias. Se a melhor forma de aprender é errando, com o erro dos outros deve ser melhor ainda. O Jake Archibald teve essa ideia, mas [com as equipes da Fórmula 1](https://jakearchibald.com/2019/f1-perf/){:target="_blank"}, e foi minha inspiração.
 
-Já deixo avisado que **não estou julgando o trabalho dos desenvolvedores** envolvidos com cada site nem com suas escolhas. Só quem está inserido num projeto sabe o motivo de cada escolha, os pedidos do cliente para colocar 350 plugins inúteis ou o prazo para entrega.
+Já deixo avisado que **não estou julgando o trabalho dos desenvolvedores** envolvidos com cada site nem com suas escolhas. Só quem está inserido num projeto sabe o motivo de cada escolha, os pedidos do cliente para colocar 350 plugins inúteis ou o prazo para entrega. Falando nisso, eu **estou procurando por um emprego**, então se você conhece alguém que esteja precisando de um dev frontend, manda o link desse artigo ou do [meu resumè](https://gist.github.com/estevanmaito/86ea82ac452becdd014d5d1d2fdaf62f){:target="_blank"}, por favor. Valeu!
 
 Por fim, dei o meu melhor possível analisando 20 sites em 5 dias. Em alguns dias foram até 7 análises. Foi só o que eu fiz. Evidentemente que algum erro pode ter ocorrido (nesse caso você pode propor a correção [no GitHub](https://github.com/estevanmaito/brasileirao-perf-2019){:target="_blank"}) ou algum item pode ter sido deixado de fora. Fiz isso por hobby, me diverti, aprendi muita coisa e espero que possa te ajudar de alguma forma também.
 
@@ -2098,7 +2098,7 @@ Enquanto que o banner do topo mede 1920x220px e pesa 39 KB. Após a compressão 
 
 Não é responsivo *
 
-O Vasco garante um quinto lugar amargo, pois não fosse o carregamento das fontes, o site estaria pronto alguns segundos antes. Não sei se seria o suficiente para tomar o segundo lugar do Flamengo, mas com certeza o terceiro.
+E chegamos ao final do campeonato! O Vasco garante um quinto lugar amargo, pois não fosse o carregamento das fontes, o site estaria pronto alguns segundos antes. Não sei se seria o suficiente para tomar o segundo lugar do Flamengo, mas com certeza o terceiro.
 
 <div class="criterios-br bom">
   <ul>
@@ -2120,3 +2120,11 @@ O Vasco garante um quinto lugar amargo, pois não fosse o carregamento das fonte
 <li>Fontes sem compressão</li>
 <li>Scripts bloqueiam renderização</li>
   </ul></div>
+
+# Considerações finais
+
+Se você leu o artigo inteiro, comenta aí quantos dias você levou e o que os seus netos estão achando 😂. Me esforcei para ser o mais sucinto possível sem deixar informações importantes de fora, mas pretendo em algum momento fazer apenas uma análise e tentar usar tudo o que eu sei pra melhorar algum site (se você tiver alguma ideia, me conta aí).
+
+Se alguém tiver interesse também, posso fazer um vídeo e colocar lá no [YouTube](https://youtube.com/estevanmaito){:target="_blank"}, mostrando o processo de análise de um desses sites, as ferramentas, a execução dos profilers, rastreamento da execução de código, enfim, uma outra abordagem, mais didática do que tá aqui.
+
+Obrigado pela visita!
