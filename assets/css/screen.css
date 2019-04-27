@@ -1967,6 +1967,12 @@ Usage (In Ghost editor):
     padding-left: 0;
 }
 
+@media (max-width: 1040px) {
+    .criterios-br ul {
+        grid-template-columns: 1fr;
+    }
+}
+
 .criterios-br.bom ul {
     margin-bottom: 0;
 }
