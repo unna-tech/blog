@@ -1976,17 +1976,18 @@ Usage (In Ghost editor):
 }
 
 .criterios-br.bom ul li:before {
-    background-image: url("/assets/images/brasileiro/bola.png");
+    background-image: url("/assets/dist/images/brasileiro/bola.png");
 }
 
 .criterios-br.ruim ul li:before {
-    background-image: url("/assets/images/brasileiro/cartao.png");
+    background-image: url("/assets/dist/images/brasileiro/cartao.png");
 }
 
 .criterios-br ul li:before {
     content: "";
     display: inline-block;
     width: 24px;
+    height: 24px;
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1995,7 +1996,7 @@ Usage (In Ghost editor):
 
 .criterios-br ul li {
     display: flex;
-    /* align-items: center; */
+    align-items: center;
 }
 
 .criterios-br ul li:first-child {
