@@ -4,14 +4,15 @@ current: post
 navigation: 'True'
 class: post-template
 cover: /assets/images/br-perf-cover-01.png
-title: 'Brasileirão de performance web 2019'
+social: /assets/images/social-br-perf.jpg
+title: 'Que time tem o site mais rápido do Brasileirão?'
 description: >-
   Uma análise da performance do site dos 20 clubes da série A do Campeonato Brasileiro de 2019.
 date: '2019-04-27 15:50:00'
 author: estevanmaito
 category: dev
 tags:
-  - ''
+  - performance
 ---
 Todo começo de campeonato brasileiro de futebol surgem diversas comparações entre elencos, caixa, títulos e até o momento dos clubes. Mas ninguém nunca pensou em comparar o site de cada time (não sei porquê...).
 
