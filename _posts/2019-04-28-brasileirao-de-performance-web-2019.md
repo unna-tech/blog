@@ -18,7 +18,7 @@ Todo começo de campeonato brasileiro de futebol surgem diversas comparações e
 
 Meu objetivo, além de criar uma competição descontraída e inovadora, é mostrar erros e acertos nos sites dos times que amamos e que podem nos ajudar em nossas escolhas diárias. Se a melhor forma de aprender é errando, com o erro dos outros deve ser melhor ainda. O Jake Archibald teve essa ideia, mas [com as equipes da Fórmula 1](https://jakearchibald.com/2019/f1-perf/){:target="_blank"}, e foi minha inspiração.
 
-Já deixo avisado que **não estou julgando o trabalho dos desenvolvedores** envolvidos com cada site nem com suas escolhas. Só quem está inserido num projeto sabe o motivo de cada escolha, os pedidos do cliente para colocar 350 plugins inúteis ou o prazo para entrega. Falando nisso, eu **estou procurando por um emprego**, então se você conhece alguém que esteja precisando de um dev frontend, manda o link desse artigo ou do [meu resumè](https://gist.github.com/estevanmaito/86ea82ac452becdd014d5d1d2fdaf62f){:target="_blank"}, por favor. Valeu!
+Já deixo avisado que **não estou julgando o trabalho dos desenvolvedores** envolvidos com cada site nem com suas escolhas. Só quem está inserido num projeto sabe o motivo de cada escolha, os pedidos do cliente para colocar 350 plugins inúteis ou o prazo para entrega.
 
 Por fim, dei o meu melhor possível analisando 20 sites em 5 dias. Em alguns dias foram até 7 análises. Foi só o que eu fiz. Evidentemente que algum erro pode ter ocorrido (nesse caso você pode propor a correção [no GitHub](https://github.com/estevanmaito/brasileirao-perf-2019){:target="_blank"}) ou algum item pode ter sido deixado de fora. Fiz isso por hobby, me diverti, aprendi muita coisa e espero que possa te ajudar de alguma forma também.
 
